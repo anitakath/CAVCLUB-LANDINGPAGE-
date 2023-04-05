@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bad+Script&family=Playfair+Display:wght@500&family=Spectral:wght@300&family=Dosis:wght@200;300&family=Kaushan+Script&family=Poiret+One&family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <title> THE CAVCLUB </title>
+</head>
+<body>
+
+    <!-- #1 SECTION: HEADER + NAV -->
+    <div class=" h-20 w-full relative " style="border: 2px solid grey" id="mobileTest">
+        <div>
+            <div class="w-full flex fixed" id="header" data-aos="fade-up">
+
+
+                <!-- LOGO -->
+                <div class="h-14 w-64 text-center my-2 text-2xl flex items-center justify-center">CAVCLUB</div>
+    
+                <div class=" absolute w-full flex justify-center  my-2">
+
+
+                    <!-- WEB NAV CONTAINER -->
+                    <div class="items-center hidden lg:flex flex space-x-6 h-14">
+    
+                        <div class="linkContainer ">
+                            <a href="#theCavalier" class="text-1xl">THE CAVALIER </a>
+                        </div>
+                        <div class="linkContainer">
+                            <a href="#aboutUs"> ABOUT US ... </a>
+                        </div>
+                        <div class="linkContainer">
+                            <a href="#puppyPlace"> PUPPY PLACE 🐶 </a>
+                        </div>
+                        <div class="linkContainer">
+                            <a href="#news"> NEWS  </a>
+                        </div>
+                        <div class="linkContainer">
+                            <a href="#events"> EVENTS </a>
+                        </div>
+                       
+                    </div>
+
+                    
+                    <!-- MOBILE NAV CONTAINER -->
+                    <div class=" flex absolute items-center justify-center text-2xl lg:hidden " id="mobileNav">
+                        <i class="fa-sharp fa-solid fa-bars"></i>
+                    </div>
+                </div>
+
+
+                <!-- TOGGLE DARK / LIGHT MODE-->
+                <div class="toggleContainer absolute"> 
+                    <h1 class="toggleTitle"> LIGHT MODE</h1>
+                    <label class="toggleLabel">
+                        <input type="checkbox">
+                        <div class="slider round"></div>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOBILE NAVIGATION -->
+    
+
+    <div class="mobileNavigationContainer">
+        <div>
+            <ul class="mobileNavLinksTable">
+                <div class="firstRow">
+                    <li>
+                        <a href="#theCavalier"> THE CAVALIER</a>
+                    </li>
+                    <li>
+                        <a href="#aboutUs"> ABOUT US ... </a>
+                    </li>
+                    <li>
+                        <a href="#puppyPlace"> PUPPY PLACE 🐶 </a>
+                    </li>
+
+                </div>
+                <div class="secondRow">
+                    <li>
+                        <a href="#news"> NEWS </a>
+                    </li>
+                    <li>
+                        <a href="#events"> EVENTS </a>
+                    </li>
+                    <li>
+                        <a href="#impressum"><em style="color:grey "> IMPRESSUM </em> </a>
+                    </li>
+                </div>
+                
+                
+            </ul>
+        </div>
+    </div>
+    </div>
+
+
+    
+
+       
+
+
+
+           
+    
+        <!-- #2 SECTION: FORM + HEADER IMG -->
+
+        <div class=" mainContainer flex flex-col-reverse  lg:flex-row  items-center" style="border: 2px solid blue" >
+            
+
+            <!-- FORM CONTAINER -->
+            <div class="formContainer" data-aos="fade-right" data-aos-duration="2000">
+                
+                <div class="form flex flex-col justify-center items-center" >
+
+
+                    <!-- FORM TITLE-->
+                    <div>
+                        <h1 class="text-3xl text-center m-2"> OFFICIAL CAVCLUB</h1>
+                        <p class="text-center m-2" class="subTitleForm"><em>for Cavalier lovers and all those who want to become Cavalier lovers after visiting this website (so for everyone)</em></p>
+                        <h2 class="text-2xl mt-4 text-center"> sign up now!</h2>
+                    </div>
+
+
+                    <!-- THE FORM + SIGN UP -->
+                    <form action="#" class="flex flex-col items-center m-2">
+                        <label for="name"> Name </label>
+                        <input type="text" id="name" name="name" class="m-2">
+                        <label for="mail">E-Mail</label>
+                        <input type="email" class="m-2">
+                        <label for="password">password</label>
+                        <input type="password" class="m-2">
+                        <button type="submit"  id="signUpBtn" class="my-2">sign up</button>
+                    </form>
+
+
+                    <!--LOGIN -->
+                    <div class="logIn">
+                        <h2>already a member? - <a>login</a></h2>
+                    </div>
+    
+                </div>
+            </div>
+
+
+
+            <!-- IMAGE CONTAINER -->
+            <div class="imgContainer" data-aos="fade-left" data-aos-duration="2000">
+                <img src="/pictures/cavclub.jpg" alt="cutie pie" id="cavalierImg">
+               
+            </div>
+            
+        </div>
+
+
+
+    <!-- #3 SECTION: ABOUT THE CAVALIER -->
+
+
+
+    <div class="section" id="theCavalier" style="border: 2px solid blue" data-aos="fade-up" data-aos-delay="500">
+        <div class="space">
+        
+        </div>
+
+        <div class="sectionTitle flex my-6">  
+            <h1 class="text-2xl"> THE CAVALIER KING CHARLES SPANIEL </h1>
+        </div>
+
+        <!-- WEB ABOUT CAVALIER SECTION -->
+        <div class="aboutCavalierCardField">
+
+            <div class="cardItem"> 
+                <div class="cardItemTitle" id="appearance"  data-aos="fade-up" data-aos-delay="1000" data-aos-duration="2000">
+                    <h1>APPEARANCE</h1>
+                </div> 
+                <div class="cardItemParagraph">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus omnis praesentium eaque veritatis beatae quae. Nesciunt hic beatae repellendus doloremque. Facere, officiis sint. Soluta aperiam, eum modi dolores nemo corporis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus omnis praesentium eaque veritatis beatae quae. Nesciunt hic beatae repellendus doloremque. Facere, officiis sint. Soluta aperiam, eum modi dolores nemo corporis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus omnis praesentium eaque veritatis beatae quae. Nesciunt hic beatae repellendus doloremque. Facere, officiis sint. Soluta aperiam, eum modi dolores nemo corporis.</p> 
+                </div>
+                
+            </div>
+            
+            <div class="cardItem">
+                <div class="cardItemTitle" id="temperament" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="2000">
+                    <h1>TEMPERAMENT </h1>
+                </div>  
+                <div class="cardItemParagraph">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus omnis praesentium eaque veritatis beatae quae. Nesciunt hic beatae repellendus doloremque. Facere, officiis sint. Soluta aperiam, eum modi dolores nemo corporis.</p> 
+                </div>
+                
+                
+            </div>
+
+            <div class="cardItem"> 
+                <div class="cardItemTitle" id="livingNeeds" data-aos="fade-up" data-aos-delay="2000" data-aos-duration="2000">
+                    <h1>LIVING NEEDS</h1>
+                </div> 
+                <div class="cardItemParagraph">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus omnis praesentium eaque veritatis beatae quae. Nesciunt hic beatae repellendus doloremque. Facere, officiis sint. Soluta aperiam, eum modi dolores nemo corporis.</p> 
+                </div>
+                
+            </div>
+
+            <div class="cardItem"> 
+                <div class="cardItemTitle" id="health" data-aos="fade-up" data-aos-delay="2500" data-aos-duration="2000">
+                    <h1>HEALTH</h1>
+                </div> 
+                <div class="cardItemParagraph">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus omnis praesentium eaque veritatis beatae quae. Nesciunt hic beatae repellendus doloremque. Facere, officiis sint. Soluta aperiam, eum modi dolores nemo corporis.</p> 
+                </div>
+                
+            </div>
+
+            <div class="cardItem"> 
+                <div class="cardItemTitle" id="history" data-aos="fade-up" data-aos-delay="3000" data-aos-duration="2000">
+                    <h1>HISTORY</h1>
+                </div>  
+                <div class="cardItemParagraph">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus omnis praesentium eaque veritatis beatae quae. Nesciunt hic beatae repellendus doloremque. Facere, officiis sint. Soluta aperiam, eum modi dolores nemo corporis.</p> 
+                </div>
+                
+            </div>    
+           
+        </div>
+
+        <!-- MOBILE & WEB ABOUT CAVALIER SECTION -->
+        <div class="imageAboutCavalierContainer" data-aos="fade-up" data-aos-duration="3000">
+            <div class="imageAboutCavalier"></div>
+        </div>
+
+
+        <!-- MOBILE ABOUT CAVALIER SECTION -->
+        <div class="aboutCavalierMobile">
+            
+            <div class="mobileCardItem" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="1000"> 
+                <h1>APPEARANCE</h1>
+                <hr>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ipsum fuga voluptate ullam fugit rem explicabo minus eos aperiam sunt facilis eligendi, repudiandae, id rerum perferendis ea modi dignissimos iste.</p>
+            </div>
+            <div class="mobileCardItem" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="1000"> 
+                <h1>TEMPERAMENT</h1>
+                <hr>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ipsum fuga voluptate ullam fugit rem explicabo minus eos aperiam sunt facilis eligendi, repudiandae, id rerum perferendis ea modi dignissimos iste.</p>
+            </div>
+            <div class="mobileCardItem" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="1000"> 
+                <h1>LIVING NEEDS</h1>
+                <hr>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ipsum fuga voluptate ullam fugit rem explicabo minus eos aperiam sunt facilis eligendi, repudiandae, id rerum perferendis ea modi dignissimos iste.</p>
+            </div>
+            <div class="mobileCardItem" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="1000"> 
+                <h1>HEALTH</h1>
+                <hr>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ipsum fuga voluptate ullam fugit rem explicabo minus eos aperiam sunt facilis eligendi, repudiandae, id rerum perferendis ea modi dignissimos iste.</p>
+            </div>
+            <div class="mobileCardItem" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="1000"> 
+                <h1>HEALTH</h1>
+                <hr>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ipsum fuga voluptate ullam fugit rem explicabo minus eos aperiam sunt facilis eligendi, repudiandae, id rerum perferendis ea modi dignissimos iste.</p>
+            </div>
+            <div class="mobileCardItem" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="1000"> 
+                <h1>HISTORY</h1>
+                <hr>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ipsum fuga voluptate ullam fugit rem explicabo minus eos aperiam sunt facilis eligendi, repudiandae, id rerum perferendis ea modi dignissimos iste.</p>
+            </div>
+        </div>
+       
+
+
+
+    </div>
+
+
+
+
+
+
+    
+
+   
+
+
+
+    <div class="doubleSection sectionMove flex flex-col items-center" id="aboutUs" style="border: 2px solid blue">
+        <div class="space"> </div>
+
+        <div class="sectionTitle flex my-6">  
+            <h1 class="text-2xl"> ABOUT US </h1>
+        </div>
+
+        <div class="flex my-6" style="border:2px solid blue">
+            <div class="flex flex-col items-center h-screen" id="aboutUsPointsContainer">
+                <h1 class="aboutUsPoints text-2xl text-center"> 1. GET CONNECTED FAST, EASY AND FOR FREE  </h1>
+    
+                <h1 class="aboutUsPoints text-2xl text-center"> 2. BE A PART OF REAL LIFE CAVCLUB EVENTS </h1>
+
+                <h1 class="aboutUsPoints text-2xl text-center">3. SUPPORT ANIMAL AND SOCIAL WELFARE </h1>
+       
+                <h1 class="aboutUsPoints text-2xl text-center">4. GET AND GIVE LOVE  </h1>
+
+                <h1 class="aboutUsPoints text-2xl text-center">5. MAKE THIS WORLD A BETTER PLACE </h1>
+
+
+            </div>
+
+
+            <div class="flex justify-center items-center" id="aboutUsDivContainer">
+                <div class="aboutUsDiv aboutUsImgs" id="aboutUsImg1"></div>
+
+                <div class="aboutUsDiv counterContainer"> 
+
+                    <img src="/pictures/undraw_team_blenheim.svg" alt="......" id="undrawCommunity1">
+                    <span>MORE THAN </span>
+                    <div class="counter" data-target="499"> </div>
+                    <span> PEOPLE ARE ALREADY ACTIVE MEMBERS OF CAVCLUB </span>
+                </div>
+
+                <div class="aboutUsDiv counterContainer">
+                    <span> WE HAVE ALREADY ORGANIZED MORE THAN</span>
+                    <div class="counter" data-target="119"></div>
+                    <span> CAVALIER EVENTS </span>
+                    <img src="/pictures/undraw_events_blenheim.svg" alt="....." id="undrawCommunity1">
+                </div>
+
+                <div class="aboutUsDiv aboutUsImgs" id="aboutUsImg1"></div>
+            </div>
+
+ 
+
+        </div>
+ö
+        
+        <!-- ABOUT COMMUNITY-->
+
+        <h1 class="text-3xl"> some reviews from the community </h1>
+        <div class="flex relative">
+            
+            <div class="userContainer">
+                  
+                <div class="userImg">
+                    <img 
+                    src="https://randomuser.me/api/portraits/men/3.jpg" 
+                    alt="..."
+                    >
+                </div>
+
+                <div class="userName">
+                    <h4> Phil Thompson</h4>
+                    <p class="userQuote"> "a recommendation for all who want to experience nice acquaintances and a really active community" </p>
+                    <a href="#"> login to connect with Phil </a>
+                </div>
+            </div>
+
+
+
+
+            <div class="userContainer">
+                  
+                <div class="userImg">
+                    <img 
+                    src="https://randomuser.me/api/portraits/women/31.jpg" 
+                    alt="..."
+                    >
+                </div>
+                <div class="userName">
+                    <h4> Michelle Clark</h4>
+                    <p class="userQuote">
+                        "the community is like a second family for me and my little Bonnie"
+                    </p>
+                    <a href="#"> login to connect with Michelle </a>
+
+                </div>
+            </div>
+
+
+            <div class="userContainer">
+              
+                <div class="userImg">
+                    <img 
+                    src="https://randomuser.me/api/portraits/women/28.jpg
+                    " 
+                    alt="..."
+                    >
+                </div>
+                <div class="userName">
+                    <h4> May Lewis</h4>
+                    <p class="userQuote">
+                        "I have met here not only loving dogs, but also found really good and true friendships"
+                    </p>
+                    <a href="#"> login to connect with May </a>
+                
+
+                </div>
+            </div>
+
+
+
+            <div class="userContainer">
+               
+                <div class="userImg">
+                    <img 
+                    src=" https://randomuser.me/api/portraits/men/11.jpg" 
+                    alt="..."
+                    >
+                </div>
+                <div class="userName">
+                    <h4> Ben Bielmann </h4>
+                    <p class="userQuote"> "the regular and local events are great! Kudos to the organization of the entire community"</p>
+                    <a href="#"> login to connect with Ben </a>
+                </div>
+            </div>
+
+            <div class="userContainer">
+                  
+                <div class="userImg">
+                    <img 
+                    src=" https://randomuser.me/api/portraits/women/42.jpg" 
+                    alt="..."
+                    >
+                </div>
+                <div class="userName">
+                    <h4> Suzy Glenn </h4>
+                    <p class="userQuote"> the community always has an open ear and very good tips!" </p>
+                    <a href="#"> <strong>login</strong> to connect with Michelle </a>         
+                </div>
+            </div>
+
+
+
+        </div>
+
+        
+
+        
+
+
+    
+    </div>
+
+
+        
+
+
+
+             
+
+
+
+
+    <div class="section sectionMove flex justify-center items-center" id="puppyPlace">
+
+        <div class="sectionHeaderContainer"> 
+            <div class="sectionHeader flex justify-center items-center">
+                <h1> PUPPY PLACE </h1>
+            </div>
+        </div>
+        <div class="sectionArticle"> PUPPY PLACE ARTICLE</div>
+
+
+    </div>
+
+    <div class="section sectionMove flex justify-center items-center" id="news">
+
+        <div class="sectionHeaderContainer"> 
+            <div class="sectionHeader flex justify-center items-center">
+                <h1> NEWS  </h1>
+            </div>
+        </div>
+        <div class="sectionArticle"> NEWS ARTICLE</div>
+
+
+    </div>
+
+    <div class="section sectionMove flex justify-center items-center" id="events">
+
+        <div class="sectionHeaderContainer"> 
+            <div class="sectionHeader flex justify-center items-center">
+                <h1>EVENTS   </h1>
+            </div>
+        </div>
+        <div class="sectionArticle"> EVENTS ARTICLE</div>
+
+
+    </div>
+    
+
+
+    <script src="main.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+</html>
