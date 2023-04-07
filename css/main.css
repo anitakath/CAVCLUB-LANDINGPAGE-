@@ -559,10 +559,6 @@ video {
   height: 5rem;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .w-64 {
   width: 16rem;
 }
@@ -627,6 +623,12 @@ h1, h2, h3, a{
 
 p{
   font-family: 'Poiret One', cursive;
+}
+
+span{
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  margin: 10px 0px;
 }
 
 :root{
@@ -957,12 +959,6 @@ input:focus{
   /*border: 2px solid turquoise;*/
 }
 
-.doubleSection{
-  background-color: white;
-  height: 200vh;
-  width: 100vw;
-}
-
 .sectionTitle{
   display: flex;
   justify-content: center;
@@ -1067,7 +1063,7 @@ input:focus{
 
 @media (max-width: 1000px){
   #theCavalier{
-    height: 250vh;
+    height: 200vh;
   }
 
   .aboutCavalierCardField{
@@ -1098,6 +1094,14 @@ input:focus{
 }
 
 /* -------------------------------------------------------------- #4 SECTION: ABOUT US------------------------------------------------------------- */
+
+.aboutUsSectionGrid{
+  height: 150vh;
+}
+
+.doubleSection{
+  height: 150vh;
+}
 
 #aboutUsPointsContainer{
   width: 50vw;
@@ -1132,6 +1136,19 @@ input:focus{
   margin: 2px;
 }
 
+.aboutUsDiv span{
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.midDivLeft{
+  margin-left: 15px;
+}
+
+.midDivRight{
+  margin-right: 15px;
+}
+
 .aboutUsImgs{
   border-radius:20px;
   box-shadow: 1px 1px 10px silver;
@@ -1158,8 +1175,69 @@ input:focus{
   box-shadow: 1px 1px 10px silver;
 }
 
+.gridContainer{
+  display: grid;
+  width: 100vw;
+  height: 800px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 400px);
+  justify-content: center;
+  justify-content: space-evenly;
+  transition: 1s ease;
+  grid-template-areas: "firstGridPic secondGridPic thirdGridPic fourthGridPic"
+                         "fifthGridPic sixthGridPic seventhGridPic eigthGridPic";
+}
+
+#firstGridPic{
+  grid-area: firstGridPic;
+}
+
+#secondGridPic{
+  grid-area: secondGridPic;
+}
+
+#thirdGridPic{
+  grid-area: thirdGridPic;
+}
+
+#fourthGridPic{
+  grid-area: fourthGridPic;
+}
+
+#fifthGridPic{
+  grid-area: fifthGridPic;
+}
+
+#sixthGridPic{
+  grid-area: sixthGridPic;
+}
+
+#seventhGridPic{
+  grid-area: seventhGridPic;
+}
+
+#eigthGridPic{
+  grid-area: eigthGridPic;
+}
+
+.gridItem{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.undrawPictures{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border-bottom: 2px solid var(--primaryBackground);
+  margin: 20px 0;
+}
+
 .counter{
-  width: 300px;
+  width: 50px;
   height: 60px;
   display: flex;
   justify-content: center;
@@ -1170,7 +1248,138 @@ input:focus{
   margin: 10px;
 }
 
+.pic{
+  padding: 10px;
+  grid-area: pic;
+  width: 100%;
+  height: 100%;
+  background-image: url('/pictures/aboutUs.jpg') ;
+  background-size: cover;
+  background-position: 0px -90px;
+  box-shadow: 2px 2px 1px var(--primaryBackground);
+}
+
+@media(max-width: 1200px){
+  .doubleSection{
+    height: 260vh;
+  }
+
+  .gridContainer{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 400px);
+    transition: 1s ease;
+    grid-template-areas: "firstGridPic secondGridPic"
+                             " fourthGridPic thirdGridPic"
+                             "sixthGridPic fifthGridPic"
+                             "seventhGridPic eigthGridPic";
+  }
+
+  .gridItem{
+    margin: 20px;
+  }
+}
+
+@media(max-width: 1000px){
+  .doubleSection{
+    height: 250vh;
+  }
+
+  .gridContainer{
+    transition: 1s ease;
+  }
+
+  #mouseOverForIncrement{
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  #aboutUsDivContainer{
+    width: 100vw;
+  }
+
+  .aboutUsDiv{
+    margin-bottom: 10px;
+  }
+
+  .aboutUsSectionGrid{
+    height: 300vh;
+  }
+
+  .gridItem{
+    margin: 30px 20px;
+  }
+}
+
+@media(max-width: 800px){
+  .gridContainer{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 400px);
+    grid-template-areas: "firstGridPic"
+                             "secondGridPic"
+                             "sixthGridPic"
+                             "seventhGridPic"
+                             "eigthGridPic"
+                             "fifthGridPic"
+                             "thirdGridPic"
+                             "fourthGridPic";
+  }
+
+  .pic{
+    background-position: 0px -350px;
+  }
+
+  .doubleSection{
+    height: 480vh;
+  }
+
+  .gridContainer{
+    transition: 1s ease;
+  }
+}
+
+@media(max-width: 600px){
+  .gridContainer{
+    transition: 1s ease;
+  }
+
+  .aboutUsDiv {
+    width: 40vw;
+  }
+
+  #aboutUsImg1{
+    width: 300px;
+    height: 300px;
+    transition: 2s ease;
+  }
+
+  #undrawCommunity1{
+    width: 100px;
+    height: 100px;
+  }
+
+  .counterContainer{
+    height: 300px;
+  }
+
+  .aboutUsSectionGrid{
+    height: 400vh;
+  }
+
+  .gridItem{
+    margin: 30px 20px;
+  }
+
+  .pic{
+    background-position: 0px -100px;
+  }
+}
+
 /* -------------------------------------------------------------- #5 SECTION: COMMUNITY ------------------------------------------------------------ */
+
+#community{
+  height: 100vh;
+  transition: 1s ease;
+}
 
 .userContainer{
   width: 100%;
@@ -1210,6 +1419,20 @@ input:focus{
   border-bottom: 0.5px solid var(--primaryBackground);
   margin-bottom: 20px;
   width: 90%;
+}
+
+@media(max-width: 1000px){
+  #community{
+    height: 340vh;
+  }
+
+  #communityContainer{
+    flex-direction: column;
+  }
+
+  .userContainer{
+    margin: 50px 0px;
+  }
 }
 
 @media (min-width: 1076px) {

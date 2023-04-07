@@ -17,9 +17,9 @@ mobileNav.addEventListener('click', ()=>{
         if ($(window).width() < 960) {
             mobileNavigationContainer.style.height = '12vh'
             mobileNavigationContainer.style.top = '100px'
-            alert(' less than 960');
+            //alert(' less than 960')
         } else{
-            alert('More than 960')
+            //alert('More than 960')
             mobileNavigationContainer.style.height = '10vh'
             mobileNavigationContainer.style.top = '80px'
         }
@@ -32,7 +32,7 @@ mobileNav.addEventListener('click', ()=>{
 
         
         mobileNavigationContainer.style.transform = 'translateX(0px)'
-        mobileNavigationContainer.style.transition = '3s ease'
+        mobileNavigationContainer.style.transition = '2s ease'
     } else{
         mobileNavigationContainer.style.height = '0vh'
         mobileNavigationContainer.style.transform = 'translateX(-2000px)'
@@ -42,18 +42,7 @@ mobileNav.addEventListener('click', ()=>{
     
 })
 
-function checkWidthOfWindow(){
-    const mobileNavigationContainer = document.querySelector('.mobileNavigationContainer');
-    
-    if ($(window).width() < 960) {
-        mobileNavigationContainer.style.height = 
-        alert('Less than 960');
-     }
-     else {
-        alert('More than 960');
-     }
 
-}
 
 
 
@@ -116,24 +105,61 @@ cardItem.forEach((x) =>{
     })
 })
 
+
+
+
 /* ---------------------------- SECTION: ABOUT US - INCREMENTER ------------------------------------------ */
 
-const counter = document.querySelectorAll('.counter')
+const mouseOverForIncrement= document.getElementById("mouseOverForIncrement")
 
-counter.forEach(counter =>{
-    counter.innerText = '0'
+console.log(mouseOverForIncrement)
+let executed = false;
 
-    const updateCounter = () =>{
-        const target = +counter.getAttribute('data-target')
-        const x = +counter.innerText
-        const increment = target / 300
 
-        if( x <= target){
-            counter.innerText = `${Math.ceil(x + increment)}`
-            setTimeout(updateCounter, 1)
+mouseOverForIncrement.addEventListener('mouseover', someFunction= ()=>{
+
+        const counter = document.querySelectorAll('.counter')
+
+       
+        //console.log(executed) -> false
+
+        if(executed){
+            return;
+        } else if(!executed){
+            console.log('not executed')
+            executed = true;
+            console.log(executed)
             
-        }
-    }
 
-    updateCounter()
+
+
+            counter.forEach(counter =>{
+                counter.innerText = '0'
+        
+                const updateCounter = () =>{
+                const target = +counter.getAttribute('data-target')
+                const x = +counter.innerText
+                const increment = target / 400
+    
+                    if( x <= target){
+                        counter.innerText = `${Math.ceil(x + increment)}`
+                        setTimeout(updateCounter, 1)
+                    
+                    }
+                }
+                    
+                updateCounter();
+      
+            })
+    
+        }
+
 })
+
+
+
+
+
+
+
+
